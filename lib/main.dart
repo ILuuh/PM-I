@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                   end: Alignment.bottomLeft,
                   colors: [
                     Colors.blue,
-                    Colors.red,
+                    Colors.yellow,
                   ],
                 )
               ),
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
             ),
             Container(
               width: double.maxFinite,
-              color: Colors.blue,
+              color: Colors.amber,
               child: Align(
                   child: Padding(
                   padding: const EdgeInsets.only(top: 8, bottom: 10),
@@ -61,8 +61,8 @@ class HomePage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       shadows: const [
                         Shadow(
-                          color: Colors.black,
-                          blurRadius: 1
+                          color: Colors.red,
+                          blurRadius: 2
                         )
                       ],
                     ),
@@ -92,7 +92,7 @@ class Aplicacao extends StatelessWidget {
     return MaterialApp(
       title: "Layout",
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.lime,
       ),
       home: const HomePage(),
     );
